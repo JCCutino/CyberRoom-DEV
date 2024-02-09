@@ -1,18 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Encuentra a pupa</title>
+    <title>Encuentra al caracol</title>
     <link rel="stylesheet" type="text/css" href="css/lintern.css">
-    <!-- <script defer src="js/lintern.js"></script> -->
+    <script defer src="js/lintern.js"></script>
 </head>
 
 <body>
-    <div class="pizarra" id="pizarra">
-       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae consequat erat, id luctus mi. Maecenas metus magna, tristique a fringilla nec, blandit sit amet ex. In quis elit pellentesque, facilisis nisl mollis, tempor augue. Maecenas vel consectetur mauris. Vivamus feugiat metus tempus libero ornare, non ornare tortor efficitur.
-       </p>
-       <div class="linterna" id="linterna"></div>
+        <!-- Imagen que activa el modal -->
+    <img src="tu-imagen.jpg" alt="Descripción de la imagen" data-bs-toggle="modal" data-bs-target="#miModal">
+
+    <!-- Modal de Bootstrap -->
+    <div class="modal fade" id="miModal" tabindex="-1" aria-labelledby="tituloModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="tituloModal">Título del Modal</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    Contenido del modal...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Guardar cambios</button>
+                </div>
+            </div>
+        </div>
     </div>
-    </body>
+    <img src="resources/img/AdventureTime.jpg" alt="caracoles" class="bg">
+
+
+
+    <div class="pizarra" id="pizarra">
+        <div class="linterna" id="linterna"></div>
+    </div>
+</body>
+
 </html>
