@@ -26,7 +26,7 @@ toggle(ev){
      this.luz.style.width = this.radio;
      this.luz.style.height= this.radio; 
      this.fondo.addEventListener("mousemove", this); 
-     this.luz.style.cursor = 'none';
+     this.luz.style.cursor = 'help';
      this.mover(ev);
   }
 } 
@@ -38,3 +38,23 @@ mover(ev){
   }
 }
 let linterna = new Linterna('pizarra','linterna', 200);
+// Función para verificar el tamaño de la pantalla y mostrar el mensaje
+function checkScreenSize() {
+  // Definir el tamaño mínimo en píxeles para ser considerado como 'responsive'
+  var minWidth =  768; // Por ejemplo,  768px es comúnmente usado como punto de corte para dispositivos móviles
+
+  // Obtener el ancho actual de la ventana
+  var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+  // Verificar si el ancho es menor al mínimo permitido
+  if (width < minWidth) {
+      // Mostrar el mensaje de advertencia
+      alert('¡Cuidado, no es responsive!');
+  }
+}
+
+// Llamar a la función cuando se carga la página
+window.onload = checkScreenSize;
+
+// También llamar a la función cada vez que cambia el tamaño de la ventana
+window.onresize = checkScreenSize;

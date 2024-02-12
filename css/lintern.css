@@ -50,7 +50,7 @@ body {
 
 .clickable {
     position: absolute;
-    cursor: pointer;
+    cursor: help;
     width: 50px;
     height: auto;
     left: 45.7vw;
