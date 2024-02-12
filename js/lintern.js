@@ -24,7 +24,8 @@ toggle(ev){
      }else{
      this.encendida = true;
      this.luz.style.width = this.radio;
-     this.luz.style.height= this.radio; 
+     this.luz.style.height= this.radio;
+     this.luz.style.filter = "blur(15px)";
      this.fondo.addEventListener("mousemove", this); 
      this.luz.style.cursor = 'help';
      this.mover(ev);
@@ -38,6 +39,8 @@ mover(ev){
   }
 }
 let linterna = new Linterna('pizarra','linterna', 200);
+
+
 // Función para verificar el tamaño de la pantalla y mostrar el mensaje
 function checkScreenSize() {
   // Definir el tamaño mínimo en píxeles para ser considerado como 'responsive'

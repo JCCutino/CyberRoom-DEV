@@ -52,7 +52,7 @@ body {
 
 .clickable {
     position: absolute;
-    cursor: help;
+    cursor: grab;
     width: 50px;
     height: auto;
     left: 45.7vw;
