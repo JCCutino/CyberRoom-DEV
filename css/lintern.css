@@ -45,8 +45,10 @@ body {
     background-image: url('../resources/img/AdventureTime.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed; /* Fija la imagen de fondo */
     z-index: 1;
 }
+
 
 .clickable {
     position: absolute;
