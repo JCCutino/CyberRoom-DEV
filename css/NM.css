@@ -1,13 +1,32 @@
-.nm{
+.nm {
     width: 100vw;
     height: 100vh;
     object-fit: cover;
     position: fixed;
-    top: 0;
-    left: 0;
-    background-image: url('../resources/img/RevelacionNM.png');
+    background-image: url('../resources/img/Callejon.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed; /* Fija la imagen de fondo */
-    z-index: 1;
+}
+
+.image-container {
+    position: relative;
+}
+
+mask-image{
+    width: 30vw;
+    height: 100vh;
+}
+
+.mask-image img{
+    margin-left: 10vw;
+    margin-top: 11vh;
+    width: 40vw;
+    height: 100vh;
+    object-fit: cover; /* Ajusta el tamaño de la imagen para cubrir completamente su contenedor */
+    z-index: 1; /* Asegura que las imágenes de la máscara estén por encima de la imagen de fondo */
+}
+
+.active{
+    display: none;
 }
