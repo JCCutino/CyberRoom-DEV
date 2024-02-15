@@ -1,0 +1,61 @@
+body {
+    margin: 0px;
+}
+
+.fixed-div {
+    background-color: #fff;
+    position: absolute;
+    /* Posiciona el div de manera fija en la página */
+    width: 40px;
+    height: 40px;
+    top: 36.2vh;
+    /* Ubica el div a  43.39vh desde el borde superior de la ventana */
+    left: 46.1vw;
+    /* Ubica el div a  61.1vw desde el borde izquierdo de la ventana */
+    z-index: 1000;
+    /* Asegura que el div esté por encima de otros elementos */
+}
+
+.linterna {
+    position: absolute;
+    width: 0px;
+    height: 0px;
+     box-shadow: 0 0 0 99999px rgb(0, 0, 0);
+    border-radius: 50%;
+    z-index: 3;
+}
+
+.pizarra {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    cursor: grab;
+}
+
+.bg {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: url('../img/AdventureTime.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; /* Fija la imagen de fondo */
+    z-index: 1;
+}
+
+
+.clickable {
+    position: absolute;
+    cursor: grab;
+    width: 56px;
+    height: auto;
+    left: 51.5vw;
+    top: 36.3vh;
+    z-index: 2;
+}
