@@ -3,10 +3,10 @@
       defer
       src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"
     ></script>
-    <script defer src="south.js"></script>
+    <script defer src="../../resources/js/south.js"></script>
     <link
       rel="stylesheet"
       href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
     />
 
-    <link rel="stylesheet" href="south.css" />
+    <link rel="stylesheet" href="../../resources/css/south.css" />
