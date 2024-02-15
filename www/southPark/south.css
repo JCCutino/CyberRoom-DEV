@@ -3,13 +3,11 @@ body {
 }
 
 #cartman {
-  width: 300px;
-  height: 270px;
-  left: 50%;
-  top: 15%;
-  margin-left: -150px;
+  width: 100%;
+  height: 100%;
   position: fixed;
   overflow: hidden;
+  background-color: white;
 }
 
 .head {
@@ -238,15 +236,17 @@ body {
   height: 20px;
   border-radius: 100%;
   background: hsl(251, 10%, 21%);
-  bottom: -10px;
+  bottom: -300px;
   position: absolute;
 }
 
 .foot-left {
-  left: 40px;
+  left: 4.5vh;
+  top: 28vh;
 }
 .foot-right {
-  right: 40px;
+  left: 15.2vh;
+  top: 27.9vh;
 }
 
 [class*="hand-"] {
@@ -261,17 +261,14 @@ body {
 }
 
 .hand-left {
-  left: 3px;
+  left: 0.5vh;
 }
-.hand-left:after {
-  left: 22px;
-}
+
 .hand-right {
-  right: 3px;
+  left: 27vh;
+  top: 16vh;
 }
-.hand-right:after {
-  right: 22px;
-}
+
 
 .cap-top {
   position: absolute;
@@ -308,13 +305,6 @@ body {
   top: 11px;
 }
 
-#cartman:before {
-  background: hsl(53, 100%, 50%);
-  border-radius: 100%;
-  z-index: 6;
-  width: 23px;
-  height: 7px;
-  position: absolute;
-  top: 0;
-  left: 136px;
+.cabesa{
+  z-index: 100;
 }
