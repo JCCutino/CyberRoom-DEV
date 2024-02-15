@@ -130,7 +130,7 @@ body {
 
 .dial {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Tres columnas con tamaño igual */
+    grid-template-columns: repeat(3); /* Tres columnas con tamaño igual */
     gap: 40px;
 }
 

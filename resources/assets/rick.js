@@ -121,8 +121,8 @@ $(document).ready(function () {
   var numbers = []; // Array para almacenar los números seleccionados
 
   $(".digit").click(function () {
-    if (numbers.length < 5) {
-      // Verificar si hay menos de 5 caracteres
+    if (numbers.length < 4) {
+      // Verificar si hay menos de 4 caracteres
       let number = $(this).text(); // Obtener el número del elemento clicado
       numbers.push(number); // Añadir el número al array
       $(".display").text(numbers.join("")); // Mostrar los números en el display
@@ -140,7 +140,7 @@ $(document).ready(function () {
 
   $(".accept").click(function () {
     let combination = $(".display").text(); // Obtener la combinación del display
-    let correctCombination = "12345"; // Definir la combinación correcta
+    let correctCombination = "2200"; // Definir la combinación correcta
     if (combination === correctCombination) {
       // Verificar si la combinación es correcta
       primeraParteResuelta = true;
@@ -212,7 +212,7 @@ $(document).ready(function () {
 
   $(".accept-pistola").click(function () {
     let combinationPistola = numbersPistola.join('').replace(/ /g, ''); // Obtener la combinación ingresada y eliminar todos los espacios en blanco
-    let correctCombinationPistola = "1234567"; // Combinación correcta
+    let correctCombinationPistola = "7327583"; // Combinación correcta
     console.log(combinationPistola);
     if (combinationPistola === correctCombinationPistola) { // Comprobar si la combinación es correcta
         $(".message-pistola").text("¡Pistola desbloqueada!").removeClass("red-message").addClass("green-message");
