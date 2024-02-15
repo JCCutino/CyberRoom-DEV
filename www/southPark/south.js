@@ -1,6 +1,5 @@
 "use strict"
 
-$(document).ready(function() {
-    $(".draggable-group").draggable();
-  });
-  
+$(document).ready(function () {
+  $(".draggable").draggable();
+});
