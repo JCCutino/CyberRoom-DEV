@@ -42,7 +42,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    background-image: url('../resources/img/AdventureTime.jpg');
+    background-image: url('../img/AdventureTime.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed; /* Fija la imagen de fondo */
