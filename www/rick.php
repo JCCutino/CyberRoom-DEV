@@ -11,8 +11,8 @@
         <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-        <link rel="stylesheet" href="../resources/assets/rick.css">
-      <script defer src="../resources/assets/rick.js"></script>
+        <link rel="stylesheet" href="../resources/css/rick.css">
+      <script defer src="../resources/js/rick.js"></script>
         <!-- Bootstrap CSS v5.2.1 -->
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -47,6 +47,7 @@
             <div class="digit">1</div>
             <div class="digit">4</div>
             <div class="digit">7</div>
+            <div class="digit-null"></div>
         </div>
         <div class="row">
             <div class="digit">2</div>
@@ -59,6 +60,8 @@
             <div class="digit">3</div>
             <div class="digit">6</div>
             <div class="digit">9</div>
+            <div class="digit-null"></div>
+
         </div>
     </div>
     <div class="accept"><i class="fas fa-check"></i> </div>
