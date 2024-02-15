@@ -53,9 +53,9 @@ body {
 .clickable {
     position: absolute;
     cursor: grab;
-    width: 50px;
+    width: 56px;
     height: auto;
-    left: 45.7vw;
+    left: 51.5vw;
     top: 36.3vh;
     z-index: 2;
 }
