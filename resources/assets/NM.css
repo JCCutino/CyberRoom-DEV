@@ -3,7 +3,18 @@
     height: 100vh;
     object-fit: cover;
     position: fixed;
-    background-image: url('../resources/img/Callejon.jpg');
+    background-image: url('/resources/img/Callejon.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; /* Fija la imagen de fondo */
+}
+
+.apu {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    background-image: url('/resources/img/badulake.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed; /* Fija la imagen de fondo */
@@ -29,4 +40,12 @@ mask-image{
 
 .active{
     display: none;
+}
+
+.apu_img{
+    margin-left: 35vw;
+    margin-top: 50vh;
+    width: 8vw;
+    object-fit: cover; /* Ajusta el tamaño de la imagen para cubrir completamente su contenedor */
+    z-index: 1; /* Asegura que las imágenes de la máscara estén por encima de la imagen de fondo */
 }
