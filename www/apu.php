@@ -16,16 +16,16 @@
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
         />
-        <link rel="stylesheet" href="/resources/assets/NM.css">
-        <script src="/resources/assets/apu.js"></script>
+        <link rel="stylesheet" href="../resources/assets/NM.css">
+        <script defer src="../resources/assets/apu.js"></script>
     </head>
 
     <body class="apu">
         <main>
             <div class="image-container d-flex ">
-                <img src="/resources/img/apu.png" alt="apu" class="apu_img" id="apu">
-                <div >
-
+                <img src="../resources/img/apu.png" alt="apu" class="apu_img" id="apu">
+                <div class="mensaje active" id="mensaje">
+                    <p>¡Vienvenido al Badulake!</p>
                 </div>
             </div>
         </main>

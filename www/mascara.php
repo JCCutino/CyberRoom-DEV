@@ -16,19 +16,19 @@
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
         />
-        <link rel="stylesheet" href="/resources/assets/NM.css">
-        <script src="/resources/assets/mascara.js"></script>
+        <link rel="stylesheet" href="../resources/assets/NM.css">
+        <script defer src="../resources/assets/mascara.js"></script>
     </head>
 
     <body class="nm">
         <main>
-                <div class="image-container d-flex justify-content-center ">
-                    <img src="/resources/img/M-N-Enmascarado.png" alt="mascara" class="mask-image" id="enmascarado">
-                    <img src="/resources/img/M-N-Enmascarado2.png" alt="mascara" class="mask-image active" id="enmascarado2">
-                    <img src="/resources/img/M-N-Enmascarado3.png" alt="mascara" class="mask-image active" id="enmascarado3">
-                    <img src="/resources/img/M-N-Enmascarado4.png" alt="mascara" class="mask-image active" id="enmascarado4">
-                    <img src="/resources/img/M-N-Revelado.png" alt="mascara" class="mask-image active" id="revelacion">
-                </div>
+            <div class="image-container d-flex justify-content-center ">
+                <img src="../resources/img/M-N-Enmascarado.png" alt="mascara" class="mask-image" id="enmascarado">
+                <img src="../resources/img/M-N-Enmascarado2.png" alt="mascara" class="mask-image active" id="enmascarado2">
+                <img src="../resources/img/M-N-Enmascarado3.png" alt="mascara" class="mask-image active" id="enmascarado3">
+                <img src="../resources/img/M-N-Enmascarado4.png" alt="mascara" class="mask-image active" id="enmascarado4">
+                <img src="../resources/img/M-N-Revelado.png" alt="mascara" class="mask-image active" id="revelacion">
+            </div>
         </main>
         <!-- Bootstrap JavaScript Libraries -->
         <script

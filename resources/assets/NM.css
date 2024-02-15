@@ -3,7 +3,7 @@
     height: 100vh;
     object-fit: cover;
     position: fixed;
-    background-image: url('/resources/img/Callejon.jpg');
+    background-image: url('../img/Callejon.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed; /* Fija la imagen de fondo */
@@ -14,7 +14,7 @@
     height: 100vh;
     object-fit: cover;
     position: fixed;
-    background-image: url('/resources/img/badulake.jpg');
+    background-image: url(../img/badulake.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed; /* Fija la imagen de fondo */
@@ -48,4 +48,19 @@ mask-image{
     width: 8vw;
     object-fit: cover; /* Ajusta el tamaño de la imagen para cubrir completamente su contenedor */
     z-index: 1; /* Asegura que las imágenes de la máscara estén por encima de la imagen de fondo */
+}
+
+.mensaje {
+    position: absolute;
+    left: 45vw;
+    top: 55vh;
+    transform: translateY(-50%);
+    width: 300px;
+    background-color: rgba(1, 109, 171, 0.9); /* Color del portal de Rick con opacidad */
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Borde blanco semi-transparente */
+    padding: 20px;
+}
+
+.mensaje p{
+    color: #ffffff;
 }
