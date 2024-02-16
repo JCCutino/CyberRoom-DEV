@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="../resources/css/garage.css">
     <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script defer src="../resources/js/garage1.js"></script>
-    <title>garage</title>
+    <title>Garage 1</title>
 </head>
 <body>
     <img src="../resources/img/screen.png" alt="garage screen" class="garage_screen">
