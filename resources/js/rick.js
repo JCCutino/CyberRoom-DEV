@@ -10,8 +10,7 @@ $(document).ready(function () {
    if(segundaParteResuelta){
     $("#message").text("¡Eso es! ¡Has demostrado ser más útil de lo que pareces! Pero no te emociones demasiado, todavía hay trabajo por hacer. ¡Vamos!");
       $("#next").hide();
-      $("#close").text("Ir al garaje");
-
+      $("#close").replaceWith('<a id="close" href="garage2.php">Viajar</a>');
       $("#close").show();
       $(".popup").fadeIn();
    }else{

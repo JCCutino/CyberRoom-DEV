@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../resources/css/garage.css">
+    <script defer src="../resources/js/garage2.js"></script>
     <title>garage</title>
 </head>
 <body>

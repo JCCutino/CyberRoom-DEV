@@ -36,7 +36,7 @@
                 </div>
                 <div class="modal-footer mt-0">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Ir al siguiente paso</button>
+                    <a type="button" href="garage1.php" class="btn btn-primary">Ir al siguiente paso</a>
                 </div>
             </div>
         </div>
