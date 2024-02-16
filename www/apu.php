@@ -55,7 +55,7 @@
                 <div class="mensaje active" id="mensaje6">
                     <p>Por Ganesha, lo conseguiste. Te acompañare en tu aventura para convertirme en un héroe americano</p>
                     <p>Y que así no me devuelvan a la India...</p>
-                    <a src="" class="text-white"><button>Ir al garaje</button></a>
+                    <a href="garage4.php" class="text-white "><button>Ir al garaje</button></a>
                 </div>
             </div>
         </main>

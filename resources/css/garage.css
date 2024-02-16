@@ -75,3 +75,11 @@ body {
     width: 17vw;
     height: auto;
 }
+
+.apu{
+    position: absolute;
+    left: 67vw;
+    top: 48vh;
+    width: 9vw;
+    height: auto;
+}
