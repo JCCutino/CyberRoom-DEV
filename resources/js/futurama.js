@@ -83,14 +83,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
             // Crea un elemento de imagen
             const imagen = document.createElement('img');
-            imagen.src = '../../resources/img/bg-futurama.jpg'; // Ruta de la imagen
+            imagen.src = '../resources/img/bg-futurama.jpg'; // Ruta de la imagen
             futEnd.appendChild(imagen); // Agrega la imagen a fut-end
 
             // Muestra el mensaje de felicidades como un h5 dentro de fut-end
             const felicidades = document.createElement('h5');
-            felicidades.textContent = '¡Felicidades! Aquí tienes el código:';
-            const felicidades2 = document.createElement('p');
-            felicidades2.textContent = 'ABCD1234';
+            felicidades.textContent = 'Fry: ¡Genial Bender! Creo que pulsaré este botón...';
+            const felicidades2 = document.createElement('a');
+            felicidades2.classList.add('btn','btn-custom-red','col-6');
+            felicidades2.href = '../www/garage3.php';
+
+            felicidades2.textContent = '¡Al garaje!';
             felicidades.classList.add('text-white','text-center', 'py-3'); // Añade la clase text-white
             felicidades2.classList.add('text-white','text-center', 'py-3'); // Añade la clase text-white
             futEnd.appendChild(felicidades);
@@ -99,7 +102,11 @@ document.addEventListener('DOMContentLoaded', function () {
             // Oculta fut-end
             futEnd.classList.remove('d-none');
             futEnd.classList.add('d-grid');
-            futEnd.classList.add('d-grid');
+
+            // centrar la imagen al resolver el juego
+            const centerMain = document.getElementById('center-main');
+            centerMain.classList.add('d-flex','justify-content-center','align-items-start');
+
         } else {
             // Si las respuestas no son correctas, muestra un mensaje de error
             alert('Respuestas incorrectas. Inténtalo de nuevo.');

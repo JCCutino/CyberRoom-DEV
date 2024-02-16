@@ -4,6 +4,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    overflow: hidden;
 }
 .garage_screen{
     position: absolute;
@@ -65,4 +66,12 @@ body {
     background-color: transparent;
     z-index: 1;
     max-width: 150px;
+}
+
+.fry{
+    position: absolute;
+    left: 7vw;
+    top: 28vh;
+    width: 17vw;
+    height: auto;
 }
