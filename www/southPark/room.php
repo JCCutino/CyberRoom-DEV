@@ -27,8 +27,9 @@
 <div id="myModal">
     <p>¡Felicidades! Has completado el puzzle.</p>
   </div>
-
+  <div class="silhouette"><img src="../../resources/img/cartmanSil.png" alt=""></div>
   <?php include("characters/cartman.php"); ?>
+
 </body>
 
 </html>
