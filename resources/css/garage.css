@@ -1,0 +1,68 @@
+body {
+    margin: 0px;
+    background-image: url('../img/cybergarage.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.garage_screen{
+    position: absolute;
+    left: 35.1vw;
+    top: 10vh;
+    width: 28vw;
+    height: auto;
+}
+/*img de pupa sentada*/
+.pupa_sentada{
+    position: absolute;
+    left: 77vw;
+    top: 55vh;
+    width: 7vw;
+    height: auto;
+}
+
+
+
+.rick{
+    position: absolute;
+    left: 72vw;
+    top: 28vh;
+    width: 27vw;
+    height: auto;
+}
+/*boton de siguiente*/
+.next {
+    position: absolute;
+    left:  90%;
+    top:  90%;
+    transform: translate(-50%, -50%);
+    padding:  10px  20px;
+    font-size:  16px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    transition: background-color  0.3s ease;
+    border-radius:  8px;
+
+}
+
+.next:hover {
+    background-color: #0056b3;
+}
+/*texto para siguiente parte*/
+.transparent-text {
+    margin-top: 30px;
+    font-family: 'Arial', sans-serif;
+    background-color: aliceblue;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%) rotate(8.5deg);
+    padding: 10px;
+    font-size: 16px;
+    color: black;
+    background-color: transparent;
+    z-index: 1;
+    max-width: 150px;
+}

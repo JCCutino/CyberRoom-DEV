@@ -1,0 +1,342 @@
+body {
+    background-image: url('../img/garaje-presente.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.rick {
+    position: absolute;
+    width: auto;
+    height: 650px;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s ease; 
+}
+
+.rick:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+    cursor: pointer;
+}
+.hoja {
+    position: absolute;
+    width: auto;
+    height: 78px;
+    top: 47%;
+    left: 63%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s ease; 
+}
+
+.hoja:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+    cursor: pointer;
+}
+
+
+.popup {
+    display: none;
+    position: absolute;
+    right: 610px;
+    top: 35%;
+    transform: translateY(-50%);
+    width: 300px;
+    background-color: rgba(1, 171, 168, 0.9); /* Color del portal de Rick con opacidad */
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Borde blanco semi-transparente */
+    padding: 20px;
+}
+
+.popup p {
+    color: #ffffff; /* Texto blanco */
+}
+
+.buttons {
+    text-align: right;
+    margin-top: 20px; /* Espacio entre el texto y los botones */
+}
+
+.buttons button {
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo semi-transparente */
+    color: #000000; /* Texto negro */
+    border: none;
+    padding: 10px 20px;
+    margin-left: 10px; /* Espacio entre los botones */
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    background-color: rgba(255, 255, 255, 0.8); /* Cambia el fondo al pasar el ratón */
+}
+
+
+.buttons a {
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo semi-transparente */
+    color: #000000; /* Texto negro */
+    border: none;
+    padding: 10px 20px;
+    margin-left: 10px; /* Espacio entre los botones */
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.buttons a:hover {
+    background-color: rgba(255, 255, 255, 0.8); /* Cambia el fondo al pasar el ratón */
+}
+
+
+.popup-hoja {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 2px solid #000;
+    padding: 20px;
+    max-width: 300px;
+    display: none;
+}
+
+.popup-hoja p {
+    margin: 0;
+}
+
+.caja {
+    position: absolute;
+    width: auto;
+    height: 120px;
+    top: 54%;
+    left: 34%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s ease; 
+}
+
+.caja:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+    cursor: pointer;
+}
+
+.panel {
+    display: none; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    align-items: center;
+    background-color: #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.row {
+    display: flex;
+    gap: 10px;
+}
+
+.dial {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas con tamaño igual */
+    gap: 40px;
+}
+
+.digit {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.digit-null {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+
+}
+.display {
+    margin-bottom: 10px;
+    background-color: #000;
+    color: #dadada;
+    padding: 5px;
+    border: 1px solid #000;
+    width: 100px; /* Ajustar según sea necesario */
+    text-align: center;
+    height: 40px;
+}
+
+
+.accept {
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: #31801d; /* Color de fondo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 50%; /* Hacer el botón circular */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.accept:hover {
+    background-color: #218838; /* Cambia el color de fondo al pasar el ratón */
+}
+
+.trash {
+    width: 50px;
+    height: 50px;
+    background-color: #dc3545; /* Color de fondo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 50%; /* Hacer el botón circular */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.trash:hover {
+    background-color: #c82333; /* Cambia el color de fondo al pasar el ratón */
+}
+
+.dial-top {
+    width: 50px;
+    height: 50px;
+    background-color: #6c757d; /* Color de fondo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 50%; /* Hacer el botón circular */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.dial-top:hover {
+    background-color: #5a6268; /* Cambia el color de fondo al pasar el ratón */
+}
+
+.nota-contra {
+    display: none;
+    width: 200px; /* Ancho de la nota */
+    height: 200px; /* Altura de la nota */
+    background-color: #fff; /* Fondo blanco */
+    border: 2px solid #000; /* Borde negro */
+    border-radius: 10px; /* Borde redondeado */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999; /* Asegura que esté por encima de otros elementos */
+
+}
+
+.contenido-contra {
+    padding: 20px; /* Espaciado interno */
+    font-family: Arial, sans-serif; /* Tipo de fuente */
+}
+
+.contenido-contra p {
+    margin: 0; /* Elimina el margen del párrafo */
+}
+
+.pistola {
+    position: absolute;
+    width: auto;
+    height: 100px;
+    top: 64%;
+    left: 22%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s ease; 
+}
+
+.pistola:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+    cursor: pointer;
+}
+
+.panel-pistola {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    z-index: 9999;
+}
+
+.display-pistola {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.dial-pistola {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.digit-pistola {
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.accept-pistola,
+.trash-pistola,
+.dial-top-pistola {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.accept-pistola {
+    background-color: #007bff;
+    color: white;
+}
+
+.trash-pistola {
+    background-color: red;
+    color: white;
+}
+
+.dial-top-pistola {
+    background-color: lightgray;
+    color: black;
+}
+
+.red-message {
+    color: red;
+}
+
+.green-message {
+    color: green;
+}
