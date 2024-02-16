@@ -16,7 +16,7 @@ $(document).ready(function () {
    }else{
     if (primeraParteResuelta) {
         $("#message").text(
-            "¡Bah! ¡Finalmente lo hiciste! Pero, ¿necesitas una pista? ¡Eres más patético de lo que pensaba!"
+          "¡Bah! ¡Finalmente lo hiciste! Pero, ¿necesitas una pista? A lo mejor necesitas mirar un poco en el pasado, busca el commit C-137"
           );
          $("#next").hide(); // Ocultar el botón "Siguiente"
         $("#close").show(); // Mostrar el botón "Cerrar"
@@ -78,7 +78,7 @@ $(document).ready(function () {
       case 5:
         if (primeraParteResuelta) {
           $("#message").text(
-            "¡Bah! ¡Finalmente lo hiciste! Pero, ¿necesitas una pista? ¡Eres más patético de lo que pensaba!"
+            "¡Bah! ¡Finalmente lo hiciste! Pero, ¿necesitas una pista? A lo mejor necesitas mirar un poco en el pasado, busca el commit C-137 y encuentra la pista."
           );
         } else {
           $("#message").text(
@@ -211,7 +211,7 @@ $(document).ready(function () {
 
   $(".accept-pistola").click(function () {
     let combinationPistola = numbersPistola.join('').replace(/ /g, ''); // Obtener la combinación ingresada y eliminar todos los espacios en blanco
-    let correctCombinationPistola = "7327583"; // Combinación correcta
+    let correctCombinationPistola = "1372341"; // Combinación correcta
     console.log(combinationPistola);
     if (combinationPistola === correctCombinationPistola) { // Comprobar si la combinación es correcta
         $(".message-pistola").text("¡Pistola desbloqueada!").removeClass("red-message").addClass("green-message");
