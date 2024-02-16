@@ -65,7 +65,7 @@ $(document).ready(function () {
 });
 
 function showAlert() {
-  alert("¡La página se ha recargado Pringao!");
+  alert("Estás en un bucle Pringao!");
 }
 
 // Función para recargar la página y mostrar un alert antes de la recarga
