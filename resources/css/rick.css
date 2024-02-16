@@ -16,7 +16,7 @@ body {
 .rick {
     position: absolute;
     width: auto;
-    height: 650px;
+    height: 45vh;
     top: 58%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -30,7 +30,7 @@ body {
 .hoja {
     position: absolute;
     width: auto;
-    height: 78px;
+    height: 7vh;
     top: 47%;
     left: 63%;
     transform: translate(-50%, -50%);
@@ -46,10 +46,10 @@ body {
 .popup {
     display: none;
     position: absolute;
-    right: 610px;
+    right: 55vh;
     top: 35%;
     transform: translateY(-50%);
-    width: 300px;
+    width: 30vh;
     background-color: rgba(1, 171, 168, 0.9); /* Color del portal de Rick con opacidad */
     border: 1px solid rgba(255, 255, 255, 0.5); /* Borde blanco semi-transparente */
     padding: 20px;
@@ -112,8 +112,8 @@ body {
 .caja {
     position: absolute;
     width: auto;
-    height: 120px;
-    top: 54%;
+    height: 10vh;
+    top: 54.3vh;
     left: 34%;
     transform: translate(-50%, -50%);
     transition: transform 0.3s ease; 
@@ -257,7 +257,7 @@ body {
 .pistola {
     position: absolute;
     width: auto;
-    height: 100px;
+    height: 7vh;
     top: 64%;
     left: 22%;
     transform: translate(-50%, -50%);
