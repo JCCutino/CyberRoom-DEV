@@ -343,12 +343,20 @@
   border-radius: 90%;
   overflow: hidden;
   position: absolute;
-  clip-path: polygon(
-    0% 25%,
-    50% 0%,
-    100% 25%,
-    100% 75%,
-    50% 100%,
-    0% 75%
-  ); /* Puedes ajustar las coordenadas según la forma deseada */
+ /* Puedes ajustar las coordenadas según la forma deseada */
+}
+
+
+.silhouette{
+  position:absolute;
+  top:55vh;
+  left:69vh;
+
+}
+
+.portalS img{
+  
+  width: 50%;
+  height: auto;
+  
 }
