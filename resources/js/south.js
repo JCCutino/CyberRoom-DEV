@@ -34,3 +34,52 @@ $(document).ready(function () {
     }
   }
 });
+
+$(document).ready(function () {
+  // Función para verificar el tamaño de la ventana
+  function verificarTamanioVentana() {
+    // Obtener el ancho de la ventana
+    let anchoVentana = $(window).width();
+
+    // Establecer un umbral, por ejemplo, 600 píxeles, como límite mínimo para el responsive
+    let umbralMinimo = 600;
+
+    // Verificar si la ventana está en pantalla completa
+    let esPantallaCompleta = window.innerWidth == screen.width && window.innerHeight == screen.height;
+
+    // Mostrar el modal si el ancho de la ventana es menor que el umbral y no está en pantalla completa
+    if (anchoVentana < umbralMinimo && !esPantallaCompleta) {
+      $("#modalNoResponsive").show();
+    } else {
+      $("#modalNoResponsive").hide();
+    }
+  }
+
+  // Verificar el tamaño de la ventana al cargar la página
+  verificarTamanioVentana();
+
+  // Verificar el tamaño de la ventana cuando se redimensiona
+  $(window).resize(function () {
+    verificarTamanioVentana();
+  });
+});
+
+function showAlert() {
+  alert("¡La página se ha recargado Pringao!");
+}
+
+// Función para recargar la página y mostrar un alert antes de la recarga
+function reloadPageWithAlert() {
+  // Mostrar el alert antes de la recarga
+  showAlert();
+  
+  // Recargar la página después de un breve tiempo (1000 milisegundos)
+  setTimeout(function() {
+    location.reload(true); // true indica que la recarga debe ser forzada desde el servidor
+  }, 1000);
+}
+
+// Configurar el intervalo de recarga cada 15 segundos
+setInterval(function() {
+  reloadPageWithAlert();
+}, 5000);

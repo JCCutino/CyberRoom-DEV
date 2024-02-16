@@ -24,6 +24,10 @@
 </head>
 
 <body>
+<div id="modalNoResponsive" style="display:none;">
+  <p>Esta página no es apta para pantallas de tamaño reducido. Por favor, utiliza la pantalla completa para una mejor experiencia.</p>
+</div>
+
 <div class="portalS"><img src="../../resources/img/portalS.png"></div>
   <div class="silhouette"><img src="../../resources/img/cartmanSil.png" alt=""></div>
   <?php include("characters/cartman.php"); ?>
