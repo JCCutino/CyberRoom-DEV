@@ -24,8 +24,38 @@
         <main>
             <div class="image-container d-flex ">
                 <img src="../resources/img/apu.png" alt="apu" class="apu_img" id="apu">
-                <div class="mensaje active" id="mensaje">
+                <img src="../resources/img/apu2.png" alt="apu" class="apu_img2 active" id="apu2">
+                <img src="../resources/img/apu_america.png" alt="apu" class="apu_img3 active" id="apu3">
+                <div class="mensaje active" id="mensaje1">
                     <p>¡Vienvenido al Badulake!</p>
+                    <p id="pasar"><button class="">Siguiente</button></p>
+                </div>
+                <div class="mensaje active" id="mensaje2">
+                    <p>Deja de perder el tiempo si no vas a comprarme nada. Mejor escribe estos datos en FileSilla</p>
+                    <p>server:apusevadelossimpsons.batcave.net/</p>
+                    <p>user:4251056_apu</p>
+                    <p>contraseña:jcpcmnslv1</p>
+                    <p id="pasar1"><button class="">Siguiente</button></p>
+                </div>
+                <div class="mensaje active" id="mensaje3">
+                    <p>¿Qué que es FileSilla? Yo que se, soy un humilde trabajor.Me parese a mi que deberia saberlo señor</p>
+                    <p>Estas cosas no me pasaban en la India...</p>
+                    <p id="pasar2"><button class="">Siguiente</button></p>
+                </div>
+                <div class="mensaje active" id="mensaje4">
+                    <p>Escribe aqui cuando tengas la respuesta</p>
+                        <input type="text" name="codigo" id="codigo">
+                        <p id="buttonsubmit"><button class="submit">Enviar</button></p>
+                </div>
+                <div class="mensaje active" id="mensaje5">
+                    <p>Pero por Lakshmi que dices. Ese no es el código.Prueba de nuevo</p>
+                        <input type="text" name="codigo2" id="codigo2">
+                        <p id="buttonsubmit2"><button class="submit">Enviar</button></p>
+                </div>
+                <div class="mensaje active" id="mensaje6">
+                    <p>Por Ganesha, lo conseguiste. Te acompañare en tu aventura para convertirme en un héroe americano</p>
+                    <p>Y que así no me devuelvan a la India...</p>
+                    <a src="" class="text-white"><button>Ir al garaje</button></a>
                 </div>
             </div>
         </main>
