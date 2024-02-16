@@ -50,19 +50,15 @@
         </div>
 
         <div class="fut-end d-none">
-            <form id="solucionForm">
-                <label for="campo1">Campo 1:</label>
+            <form id="solucionForm" class="d-grid">
+                <label for="campo1"><span class="fst-italic">"Mata al..."</span></label>
                 <input type="text" id="campo1" name="campo1" required>
-                <br>
-                <label for="campo2">Campo 2:</label>
+                <label for="campo2"><span class="fst-italic">"Purga al..."</label>
                 <input type="text" id="campo2" name="campo2" required>
-                <br>
-                <label for="campo3">Campo 3:</label>
+                <label for="campo3"><span class="fst-italic">"They're taking the hobbits to..."</label>
                 <input type="text" id="campo3" name="campo3" required>
-                <br>
-                <label for="campo4">Campo 4:</label>
+                <label for="campo4"><span class="fst-italic">"Cuenta con mi arco y con mi..."</label>
                 <input type="text" id="campo4" name="campo4" required>
-                <br>
                 <div class="text-center mt-3">
                     <button class="btnbtn-custom-red" type="submit">Enviar</button>
                 </div>

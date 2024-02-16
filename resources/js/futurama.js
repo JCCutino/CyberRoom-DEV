@@ -30,6 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if (e.matches) {
                 futInicio.classList.add('d-none');
                 futMid.classList.remove('d-none');
+                mediaQuery.removeEventListener('change', handleScreenSizeChange);
             } else {
                 futInicio.classList.remove('d-none');
                 futMid.classList.add('d-none');
@@ -48,17 +49,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
 /* *REVELA LA PRUEBA FINAL */
 document.addEventListener('DOMContentLoaded', function () {
+    const cortarBtn = document.getElementById('cortarBtn'); // Seleccionar el botón "Cortar"
+    const futInicio = document.querySelector('.fut-inicio');
     const futMid = document.querySelector('.fut-mid');
     const futEnd = document.querySelector('.fut-end');
-    const cortarBtn = document.getElementById('cortarBtn'); // Seleccionar el botón "Cortar"
 
     cortarBtn.addEventListener('click', function () {
-        futMid.innerHTML = `
-        <div>
-        <p>Introduzca correctamente las palabras clave</p>
-        </div>
-        `;
-        futEnd.classList.remove('d-none'); // Quitar la clase d-none de fut-end
+        futInicio.classList.add('d-none'); // Oculta el contenido de la clase "fut-inicio"
+        futMid.classList.add('d-none'); // Oculta el contenido de la clase "fut-mid"
+        futEnd.classList.remove('d-none'); // Revela el contenido de la clase "fut-end"
     });
 });
 
@@ -78,22 +77,29 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Verifica si las respuestas son correctas
         if (campo1 === 'mutante' && campo2 === 'impuro' && campo3 === 'isengard' && campo4 === 'hacha') {
+            // Limpia cualquier contenido anterior en fut-end
+            const futEnd = document.querySelector('.fut-end');
+            futEnd.innerHTML = '';
+
             // Crea un elemento de imagen
-            const futMid = document.querySelector('.fut-mid');
-            futMid.innerHTML = ''; // Limpia cualquier contenido anterior
             const imagen = document.createElement('img');
             imagen.src = '../../resources/img/bg-futurama.jpg'; // Ruta de la imagen
-            futMid.appendChild(imagen); // Agrega la imagen a fut-mid
+            futEnd.appendChild(imagen); // Agrega la imagen a fut-end
 
-            // Muestra el mensaje de felicidades como un h5 dentro de fut-mid
+            // Muestra el mensaje de felicidades como un h5 dentro de fut-end
             const felicidades = document.createElement('h5');
-            felicidades.textContent = '¡Felicidades! Has encontrado la solución correcta.';
-            felicidades.classList.add('text-white'); // Añade la clase text-white
-            futMid.appendChild(felicidades);
+            felicidades.textContent = '¡Felicidades! Aquí tienes el código:';
+            const felicidades2 = document.createElement('p');
+            felicidades2.textContent = 'ABCD1234';
+            felicidades.classList.add('text-white','text-center', 'py-3'); // Añade la clase text-white
+            felicidades2.classList.add('text-white','text-center', 'py-3'); // Añade la clase text-white
+            futEnd.appendChild(felicidades);
+            futEnd.appendChild(felicidades2);
 
             // Oculta fut-end
-            const futEnd = document.querySelector('.fut-end');
-            futEnd.classList.add('d-none');
+            futEnd.classList.remove('d-none');
+            futEnd.classList.add('d-grid');
+            futEnd.classList.add('d-grid');
         } else {
             // Si las respuestas no son correctas, muestra un mensaje de error
             alert('Respuestas incorrectas. Inténtalo de nuevo.');
