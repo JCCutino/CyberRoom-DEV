@@ -28,6 +28,7 @@ document.addEventListener('DOMContentLoaded', function(){
         if(clickCount>=40){
         this.classList.toggle('active');
         document.getElementById('revelacion').classList.toggle('active');
+        document.getElementById('final_juego').classList.toggle('active');
         }
     });
 });

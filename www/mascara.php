@@ -28,6 +28,11 @@
                 <img src="../resources/img/M-N-Enmascarado3.png" alt="mascara" class="mask-image active" id="enmascarado3">
                 <img src="../resources/img/M-N-Enmascarado4.png" alt="mascara" class="mask-image active" id="enmascarado4">
                 <img src="../resources/img/M-N-Revelado.png" alt="mascara" class="mask-image active" id="revelacion">
+                <div class="mensaje_final active" id="final_juego">
+                    <p>Has descubierto quien es N. El futuro de la humanidad es un misterio por ahora...</p>
+                    <p>Pero almenos ahora el misterio es nuestro</p>
+                    <a href="https://www.youtube.com/watch?v=S-_UYzYpY7U" class="text-white "><button>Salir</button></a>
+                </div>
             </div>
         </main>
         <!-- Bootstrap JavaScript Libraries -->

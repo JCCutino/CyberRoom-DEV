@@ -77,6 +77,17 @@ mask-image{
     padding: 20px;
 }
 
+.mensaje_final {
+    position: absolute;
+    left: 45vw;
+    top: 75vh;
+    transform: translateY(-50%);
+    width: 320px;
+    background-color: rgba(1, 109, 171, 0.9); /* Color del portal de Rick con opacidad */
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Borde blanco semi-transparente */
+    padding: 20px;
+}
+
 .mensaje p{
     color: #ffffff;
 }
