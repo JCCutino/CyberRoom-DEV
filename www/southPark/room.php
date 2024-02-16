@@ -27,6 +27,7 @@
 <div class="portalS"><img src="../../resources/img/portalS.png"></div>
   <div class="silhouette"><img src="../../resources/img/cartmanSil.png" alt=""></div>
   <?php include("characters/cartman.php"); ?>
+  <a href="room2.html" class="botonsito"><button>Pringao</button></a>
 
 </body>
 

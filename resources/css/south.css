@@ -244,10 +244,12 @@
 }
 
 .foot-left {
+  z-index: 10;
   left: 160vh;
   top: 68vh;
 }
 .foot-right {
+  z-index: 10;
   left: 160vh;
   top: 57.9vh;
 }
@@ -264,11 +266,13 @@
 }
 
 .hand-left {
+  z-index: 1000;
   left: 193vh;
   top: 70vh;
 }
 
 .hand-right {
+  z-index: 1000;
   left: 180vh;
   top: 70vh;
 }
@@ -314,6 +318,7 @@
 }
 
 .cuerpo{
+  z-index: 10;
   left: 172vh;
   top: 42vh;
 }
@@ -333,6 +338,7 @@
 .piernas{
   top:23vh;
   left:172vh;
+  z-index: 1;
 }
 
 .silueta {
@@ -359,4 +365,15 @@
   width: 50%;
   height: auto;
   
+}
+
+button{
+  z-index: 10;
+}
+
+.botonsito{
+  position: absolute;
+  z-index: 100;
+  top: 95vh;
+  left:1vh;
 }
