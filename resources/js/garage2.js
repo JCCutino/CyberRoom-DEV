@@ -14,7 +14,7 @@ $(document).ready(function() {
                 break;
             case 2:
                 $("#text").text("Una vez que hayas localizado a Fry, asegúrate de traerlo a la agencia. ¡Buena suerte en tu misión, agente!");
-                $("#next").replaceWith('<a id="next" class="next" href="tu-script-php.php">Viajar</a>');
+                $("#next").replaceWith('<a id="next" class="next" href="fut_index.php">Viajar</a>');
                 break;
             default:
                 $("#text").text("¡Date prisa, agente! El tiempo apremia.");
