@@ -22,11 +22,12 @@
 
 .image-container {
     position: relative;
+    top: 30vh;
 }
 
 mask-image{
     width: 30vw;
-    top: 10vw;
+    top: 15vw;
 }
 
 .mask-image img{
